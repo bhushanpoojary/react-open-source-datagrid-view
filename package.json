@@ -1,7 +1,7 @@
 {
   "name": "react-open-source-datagrid-view",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Demo website for react-open-source-grid DataGrid component",
   "scripts": {
