@@ -577,7 +577,7 @@ function ServerSideGrid() {
         setFilters(newFilters);
         setPage(0);
       }}
-      onPageChange={(newPage) => setPage(newPage)}
+      onPageChanged={(newPage, _pageSize) => setPage(newPage)}
     />
   );
 }`,
