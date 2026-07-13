@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useState } from 'react';
 import '../index.css';
 import { DataGrid, StatusChip, CurrencyCell } from 'react-open-source-grid';
@@ -109,7 +108,7 @@ export const DemoGridPage: React.FC = () => {
   };
 
   // Handle cell edit
-  const handleCellEdit = (rowIndex: number, field: string, value: any) => {
+  const handleCellEdit = (rowIndex: number, field: string, value: unknown) => {
     setEmployees((prev) => {
       const updated = [...prev];
       updated[rowIndex] = { ...updated[rowIndex], [field]: value };
