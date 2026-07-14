@@ -4,6 +4,7 @@ import { HomePage } from './components/HomePage'
 import { DemoGridPage } from './components/DemoGridPage'
 import { VirtualScrollDemo } from './components/VirtualScrollDemo'
 import { CellRenderersDemo } from './components/CellRenderersDemo'
+import { ValueFormatterDemo } from './components/ValueFormatterDemo'
 import { ColumnFiltersDemo } from './components/ColumnFiltersDemo'
 import { FacetedSearchDemo } from './components/FacetedSearchDemo'
 import { FilteredSearchDemo } from './components/FilteredSearchDemo'
@@ -31,7 +32,7 @@ import { HorizontalScrollBugDemo } from './components/HorizontalScrollBugDemo';
 import ServerSideFeaturesDemo from './components/ServerSideFeaturesDemo';
 import './App.css'
 
-type DemoType = 'home' | 'standard' | 'virtual' | 'renderers' | 'filters' | 'faceted' | 'filtered-search' | 'persistence' | 'infinite' | 'themes' | 'density' | 'tree' | 'drag' | 'rowpin' | 'market' | 'accessibility' | 'contextmenu' | 'tooltip' | 'benchmark' | 'gallery' | 'api-reference' | 'api-demo' | 'pivot' | 'advanced-editors' | 'charts' | 'master-detail' | 'groupby' | 'horizontal-scroll-bug' | 'server-side';
+type DemoType = 'home' | 'standard' | 'virtual' | 'renderers' | 'value-formatters' | 'filters' | 'faceted' | 'filtered-search' | 'persistence' | 'infinite' | 'themes' | 'density' | 'tree' | 'drag' | 'rowpin' | 'market' | 'accessibility' | 'contextmenu' | 'tooltip' | 'benchmark' | 'gallery' | 'api-reference' | 'api-demo' | 'pivot' | 'advanced-editors' | 'charts' | 'master-detail' | 'groupby' | 'horizontal-scroll-bug' | 'server-side';
 
 interface MenuItem {
   id: DemoType;
@@ -53,6 +54,7 @@ const pathToDemoMap: Record<string, DemoType> = {
   '/demo/standard': 'standard',
   '/demo/virtual-scrolling': 'virtual',
   '/demo/cell-renderers': 'renderers',
+  '/demo/value-formatters': 'value-formatters',
   '/demo/column-filters': 'filters',
   '/demo/faceted-search': 'faceted',
   '/demo/filtered-search': 'filtered-search',
@@ -244,6 +246,13 @@ function App() {
           icon: '🎭',
           description: 'Custom cell components',
           path: '/demo/cell-renderers',
+        },
+        {
+          id: 'value-formatters',
+          label: 'Value Getters & Formatters',
+          icon: '🧮',
+          description: 'Computed columns & display formatting',
+          path: '/demo/value-formatters',
         },
         {
           id: 'themes',
@@ -654,6 +663,7 @@ function App() {
           <Route path="/demo/row-dragging" element={<RowDraggingDemo />} />
           <Route path="/demo/row-pinning" element={<RowPinningDemo />} />
           <Route path="/demo/cell-renderers" element={<CellRenderersDemo />} />
+          <Route path="/demo/value-formatters" element={<ValueFormatterDemo />} />
           <Route path="/demo/column-filters" element={<ColumnFiltersDemo />} />
           <Route path="/demo/faceted-search" element={<FacetedSearchDemo />} />
           <Route path="/demo/filtered-search" element={<FilteredSearchDemo />} />
