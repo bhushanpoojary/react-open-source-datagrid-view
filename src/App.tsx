@@ -5,6 +5,11 @@ import { DemoGridPage } from './components/DemoGridPage'
 import { VirtualScrollDemo } from './components/VirtualScrollDemo'
 import { CellRenderersDemo } from './components/CellRenderersDemo'
 import { ValueFormatterDemo } from './components/ValueFormatterDemo'
+import { ColumnVisibilityDemo } from './components/ColumnVisibilityDemo'
+import { ColumnSizingDemo } from './components/ColumnSizingDemo'
+import { CellStylingDemo } from './components/CellStylingDemo'
+import { DefaultColDefDemo } from './components/DefaultColDefDemo'
+import { DefaultSortDemo } from './components/DefaultSortDemo'
 import { ColumnFiltersDemo } from './components/ColumnFiltersDemo'
 import { FacetedSearchDemo } from './components/FacetedSearchDemo'
 import { FilteredSearchDemo } from './components/FilteredSearchDemo'
@@ -32,7 +37,7 @@ import { HorizontalScrollBugDemo } from './components/HorizontalScrollBugDemo';
 import ServerSideFeaturesDemo from './components/ServerSideFeaturesDemo';
 import './App.css'
 
-type DemoType = 'home' | 'standard' | 'virtual' | 'renderers' | 'value-formatters' | 'filters' | 'faceted' | 'filtered-search' | 'persistence' | 'infinite' | 'themes' | 'density' | 'tree' | 'drag' | 'rowpin' | 'market' | 'accessibility' | 'contextmenu' | 'tooltip' | 'benchmark' | 'gallery' | 'api-reference' | 'api-demo' | 'pivot' | 'advanced-editors' | 'charts' | 'master-detail' | 'groupby' | 'horizontal-scroll-bug' | 'server-side';
+type DemoType = 'home' | 'standard' | 'virtual' | 'renderers' | 'value-formatters' | 'column-visibility' | 'column-sizing' | 'cell-styling' | 'default-coldef' | 'default-sort' | 'filters' | 'faceted' | 'filtered-search' | 'persistence' | 'infinite' | 'themes' | 'density' | 'tree' | 'drag' | 'rowpin' | 'market' | 'accessibility' | 'contextmenu' | 'tooltip' | 'benchmark' | 'gallery' | 'api-reference' | 'api-demo' | 'pivot' | 'advanced-editors' | 'charts' | 'master-detail' | 'groupby' | 'horizontal-scroll-bug' | 'server-side';
 
 interface MenuItem {
   id: DemoType;
@@ -55,6 +60,11 @@ const pathToDemoMap: Record<string, DemoType> = {
   '/demo/virtual-scrolling': 'virtual',
   '/demo/cell-renderers': 'renderers',
   '/demo/value-formatters': 'value-formatters',
+  '/demo/column-visibility': 'column-visibility',
+  '/demo/column-sizing': 'column-sizing',
+  '/demo/cell-styling': 'cell-styling',
+  '/demo/default-coldef': 'default-coldef',
+  '/demo/default-sort': 'default-sort',
   '/demo/column-filters': 'filters',
   '/demo/faceted-search': 'faceted',
   '/demo/filtered-search': 'filtered-search',
@@ -253,6 +263,41 @@ function App() {
           icon: '🧮',
           description: 'Computed columns & display formatting',
           path: '/demo/value-formatters',
+        },
+        {
+          id: 'column-visibility',
+          label: 'Column Visibility',
+          icon: '🙈',
+          description: 'Hide columns declaratively with the hide prop',
+          path: '/demo/column-visibility',
+        },
+        {
+          id: 'column-sizing',
+          label: 'Column Sizing',
+          icon: '📏',
+          description: 'minWidth / maxWidth / flex sizing for columns',
+          path: '/demo/column-sizing',
+        },
+        {
+          id: 'cell-styling',
+          label: 'Cell Styling',
+          icon: '🎨',
+          description: 'cellStyle / cellClass / cellClassRules',
+          path: '/demo/cell-styling',
+        },
+        {
+          id: 'default-coldef',
+          label: 'Default Column Def',
+          icon: '♻️',
+          description: 'Share settings across columns with defaultColDef',
+          path: '/demo/default-coldef',
+        },
+        {
+          id: 'default-sort',
+          label: 'Default Sort',
+          icon: '⬇️',
+          description: 'Sort on first render with sort / sortIndex',
+          path: '/demo/default-sort',
         },
         {
           id: 'themes',
@@ -664,6 +709,11 @@ function App() {
           <Route path="/demo/row-pinning" element={<RowPinningDemo />} />
           <Route path="/demo/cell-renderers" element={<CellRenderersDemo />} />
           <Route path="/demo/value-formatters" element={<ValueFormatterDemo />} />
+          <Route path="/demo/column-visibility" element={<ColumnVisibilityDemo />} />
+          <Route path="/demo/column-sizing" element={<ColumnSizingDemo />} />
+          <Route path="/demo/cell-styling" element={<CellStylingDemo />} />
+          <Route path="/demo/default-coldef" element={<DefaultColDefDemo />} />
+          <Route path="/demo/default-sort" element={<DefaultSortDemo />} />
           <Route path="/demo/column-filters" element={<ColumnFiltersDemo />} />
           <Route path="/demo/faceted-search" element={<FacetedSearchDemo />} />
           <Route path="/demo/filtered-search" element={<FilteredSearchDemo />} />
