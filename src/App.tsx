@@ -10,6 +10,9 @@ import { ColumnSizingDemo } from './components/ColumnSizingDemo'
 import { CellStylingDemo } from './components/CellStylingDemo'
 import { DefaultColDefDemo } from './components/DefaultColDefDemo'
 import { DefaultSortDemo } from './components/DefaultSortDemo'
+import { EditingAndFilterDemo } from './components/EditingAndFilterDemo'
+import { RowStylingDemo } from './components/RowStylingDemo'
+import { TooltipsOverlaysDemo } from './components/TooltipsOverlaysDemo'
 import { ColumnFiltersDemo } from './components/ColumnFiltersDemo'
 import { FacetedSearchDemo } from './components/FacetedSearchDemo'
 import { FilteredSearchDemo } from './components/FilteredSearchDemo'
@@ -37,7 +40,7 @@ import { HorizontalScrollBugDemo } from './components/HorizontalScrollBugDemo';
 import ServerSideFeaturesDemo from './components/ServerSideFeaturesDemo';
 import './App.css'
 
-type DemoType = 'home' | 'standard' | 'virtual' | 'renderers' | 'value-formatters' | 'column-visibility' | 'column-sizing' | 'cell-styling' | 'default-coldef' | 'default-sort' | 'filters' | 'faceted' | 'filtered-search' | 'persistence' | 'infinite' | 'themes' | 'density' | 'tree' | 'drag' | 'rowpin' | 'market' | 'accessibility' | 'contextmenu' | 'tooltip' | 'benchmark' | 'gallery' | 'api-reference' | 'api-demo' | 'pivot' | 'advanced-editors' | 'charts' | 'master-detail' | 'groupby' | 'horizontal-scroll-bug' | 'server-side';
+type DemoType = 'home' | 'standard' | 'virtual' | 'renderers' | 'value-formatters' | 'column-visibility' | 'column-sizing' | 'cell-styling' | 'default-coldef' | 'default-sort' | 'editing-filter' | 'row-styling' | 'tooltips-overlays' | 'filters' | 'faceted' | 'filtered-search' | 'persistence' | 'infinite' | 'themes' | 'density' | 'tree' | 'drag' | 'rowpin' | 'market' | 'accessibility' | 'contextmenu' | 'tooltip' | 'benchmark' | 'gallery' | 'api-reference' | 'api-demo' | 'pivot' | 'advanced-editors' | 'charts' | 'master-detail' | 'groupby' | 'horizontal-scroll-bug' | 'server-side';
 
 interface MenuItem {
   id: DemoType;
@@ -65,6 +68,9 @@ const pathToDemoMap: Record<string, DemoType> = {
   '/demo/cell-styling': 'cell-styling',
   '/demo/default-coldef': 'default-coldef',
   '/demo/default-sort': 'default-sort',
+  '/demo/editing-filter': 'editing-filter',
+  '/demo/row-styling': 'row-styling',
+  '/demo/tooltips-overlays': 'tooltips-overlays',
   '/demo/column-filters': 'filters',
   '/demo/faceted-search': 'faceted',
   '/demo/filtered-search': 'filtered-search',
@@ -298,6 +304,27 @@ function App() {
           icon: '⬇️',
           description: 'Sort on first render with sort / sortIndex',
           path: '/demo/default-sort',
+        },
+        {
+          id: 'editing-filter',
+          label: 'Editing & Quick Filter',
+          icon: '✏️',
+          description: 'editable callback, singleClickEdit, quickFilterText',
+          path: '/demo/editing-filter',
+        },
+        {
+          id: 'row-styling',
+          label: 'Row Styling & Height',
+          icon: '🧾',
+          description: 'rowStyle / rowClass / rowClassRules / getRowHeight',
+          path: '/demo/row-styling',
+        },
+        {
+          id: 'tooltips-overlays',
+          label: 'Tooltips & Overlays',
+          icon: '💬',
+          description: 'tooltipField / headerTooltip / loading & no-rows overlays',
+          path: '/demo/tooltips-overlays',
         },
         {
           id: 'themes',
@@ -714,6 +741,9 @@ function App() {
           <Route path="/demo/cell-styling" element={<CellStylingDemo />} />
           <Route path="/demo/default-coldef" element={<DefaultColDefDemo />} />
           <Route path="/demo/default-sort" element={<DefaultSortDemo />} />
+          <Route path="/demo/editing-filter" element={<EditingAndFilterDemo />} />
+          <Route path="/demo/row-styling" element={<RowStylingDemo />} />
+          <Route path="/demo/tooltips-overlays" element={<TooltipsOverlaysDemo />} />
           <Route path="/demo/column-filters" element={<ColumnFiltersDemo />} />
           <Route path="/demo/faceted-search" element={<FacetedSearchDemo />} />
           <Route path="/demo/filtered-search" element={<FilteredSearchDemo />} />
