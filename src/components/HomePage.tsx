@@ -171,6 +171,24 @@ export function HomePage() {
             <a href="#install" className="hp-btn-secondary">
               Get Started
             </a>
+            <a
+              href="https://github.com/bhushanpoojary/react-open-source-datagrid"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hp-btn-secondary"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.431 8.202 1.192-5.935 5.785 1.401 8.168L12 19.771l-7.336 3.392 1.401-8.168L.13 9.21l8.202-1.192z"/></svg>
+              Star on GitHub
+            </a>
+            <a
+              href="https://github.com/sponsors/bhushanpoojary"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hp-btn-sponsor"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.716-4.35-9.428-8.06C.63 10.31 1.11 6.6 4.2 4.94c2.36-1.27 5.02-.4 6.5 1.53l1.3 1.69 1.3-1.69c1.48-1.93 4.14-2.8 6.5-1.53 3.09 1.66 3.57 5.37 1.63 7.99C18.716 16.65 12 21 12 21z"/></svg>
+              Sponsor
+            </a>
           </div>
         </div>
       </section>

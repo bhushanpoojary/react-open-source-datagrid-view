@@ -124,6 +124,26 @@
   border-color: rgba(255,255,255,0.6);
 }
 
+.hp-btn-sponsor {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #db61a2 0%, #f472b6 100%);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(219,97,162,0.35);
+}
+
+.hp-btn-sponsor:hover {
+  box-shadow: 0 4px 12px rgba(219,97,162,0.45);
+  transform: translateY(-1px);
+}
+
 /* ---------- Stats Strip ---------- */
 .hp-stats {
   display: grid;
