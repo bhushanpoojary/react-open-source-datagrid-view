@@ -7,6 +7,7 @@ import { CellRenderersDemo } from './components/CellRenderersDemo'
 import { ValueFormatterDemo } from './components/ValueFormatterDemo'
 import { ColumnVisibilityDemo } from './components/ColumnVisibilityDemo'
 import { ColumnSizingDemo } from './components/ColumnSizingDemo'
+import { ColumnReorderingDemo } from './components/ColumnReorderingDemo'
 import { CellStylingDemo } from './components/CellStylingDemo'
 import { DefaultColDefDemo } from './components/DefaultColDefDemo'
 import { DefaultSortDemo } from './components/DefaultSortDemo'
@@ -285,6 +286,13 @@ function App() {
           icon: '📏',
           description: 'minWidth / maxWidth / flex sizing for columns',
           path: '/demo/column-sizing',
+        },
+        {
+          id: 'column-reordering',
+          label: 'Column Reordering',
+          icon: '🔀',
+          description: 'Disable drag-to-reorder with disableColumnReorder / lockPosition',
+          path: '/demo/column-reordering',
         },
         {
           id: 'cell-styling',
@@ -747,6 +755,7 @@ function App() {
           <Route path="/demo/value-formatters" element={<ValueFormatterDemo />} />
           <Route path="/demo/column-visibility" element={<ColumnVisibilityDemo />} />
           <Route path="/demo/column-sizing" element={<ColumnSizingDemo />} />
+          <Route path="/demo/column-reordering" element={<ColumnReorderingDemo />} />
           <Route path="/demo/cell-styling" element={<CellStylingDemo />} />
           <Route path="/demo/default-coldef" element={<DefaultColDefDemo />} />
           <Route path="/demo/default-sort" element={<DefaultSortDemo />} />
