@@ -233,37 +233,37 @@ export const VirtualScrollDemo: React.FC = () => {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '16px', fontSize: '14px', color: '#374151' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>?</span>
+              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>✓</span>
               <div>
                 <strong>Windowing:</strong> Only renders visible rows in viewport
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>?</span>
+              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>✓</span>
               <div>
                 <strong>Column Virtualization:</strong> Only renders visible columns
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>?</span>
+              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>✓</span>
               <div>
                 <strong>Dynamic Row Heights:</strong> Supports variable row sizes
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>?</span>
+              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>✓</span>
               <div>
                 <strong>Cell Recycling:</strong> Reuses DOM elements for performance
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>?</span>
+              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>✓</span>
               <div>
                 <strong>Overscan:</strong> Pre-renders rows above/below viewport
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>?</span>
+              <span style={{ color: '#16a34a', marginRight: '8px', fontSize: '14px' }}>✓</span>
               <div>
                 <strong>Smooth Scrolling:</strong> Maintains scroll position accurately
               </div>

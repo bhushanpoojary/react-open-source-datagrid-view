@@ -141,55 +141,55 @@ export const DemoGridPage: React.FC = () => {
           <h2 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '16px', color: '#111827' }}>Available Features</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px', fontSize: '14px' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Sortable columns</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Column filtering</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Pagination controls</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Column resizing</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Column reordering</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Row selection</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Editable cells</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Keyboard navigation</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Sticky headers</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Row grouping</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Aggregations</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Footer aggregates</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>?</span>
+              <span style={{ color: '#2563eb', fontWeight: '600', marginTop: '2px' }}>✓</span>
               <span style={{ color: '#374151' }}>Context menu</span>
             </div>
           </div>
