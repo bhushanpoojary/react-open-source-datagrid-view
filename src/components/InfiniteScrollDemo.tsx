@@ -66,7 +66,7 @@ export const InfiniteScrollDemo: React.FC = () => {
         sortable: true,
         filterable: true,
         filterType: 'number',
-        renderCell: (row) => `$${row.salary.toLocaleString()}`,
+        renderCell: (row) => (typeof row.salary === 'number' ? `$${row.salary.toLocaleString()}` : ''),
       },
       {
         field: 'department',
